@@ -1,3 +1,4 @@
+import craftsmanship from "../assets/images/craftsmanship.jpg";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "./ImagePlaceholder";
 import "./Craftsmanship.css";
@@ -27,8 +28,16 @@ function Craftsmanship() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: EASE }}
         >
-          <ImagePlaceholder label="Craftsmanship Detail — Joinery" ratio="4 / 5" plate="Plate 02" />
-        </motion.div>
+         <img
+  src={craftsmanship}
+  alt="Craftsmanship Detail — Joinery"
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    display: "block",
+  }}
+/>
 
         <div className="craftsmanship__text">
           <motion.span
