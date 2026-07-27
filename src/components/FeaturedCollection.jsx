@@ -31,7 +31,6 @@ const PIECES = [
     ratio: "5 / 4",
   },
 ];
-];
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 22 },
