@@ -1,3 +1,4 @@
+import heroImage from "../assets/images/hero.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import ImagePlaceholder from "./ImagePlaceholder";
@@ -67,11 +68,12 @@ function Hero() {
         >
           <motion.div className="hero__image-parallax" style={{ y: parallaxY }}>
             <ImagePlaceholder
-              label="Living Room — Copenhagen Apartment"
-              ratio="16 / 10"
-              tone="warm"
-              plate="Plate 01"
-            />
+  image={heroImage}
+  label="Living Room — Copenhagen Apartment"
+  ratio="16 / 10"
+  tone="warm"
+  plate="Plate 01"
+/>
           </motion.div>
         </motion.div>
       </div>
