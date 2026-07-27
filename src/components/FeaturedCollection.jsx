@@ -1,3 +1,6 @@
+import featured1 from "../assets/images/featured-1.jpg";
+import featured2 from "../assets/images/featured-2.jpg";
+import featured3 from "../assets/images/featured-3.jpg";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "./ImagePlaceholder";
 import "./FeaturedCollection.css";
@@ -10,23 +13,24 @@ const PIECES = [
     name: "The Bevel Chair",
     material: "American white oak",
     detail: "Hand-caned seat. Waxed, never lacquered.",
-    image: "The Bevel Chair — Studio",
+    image: featured1,
     ratio: "4 / 5",
   },
   {
     number: "N° 02",
     name: "Hearth Table",
     material: "Solid walnut",
-    image: "Hearth Table — Detail",
+    image: featured2,
     ratio: "5 / 4",
   },
   {
     number: "N° 03",
     name: "Fold Cabinet",
     material: "Ash and blackened steel",
-    image: "Fold Cabinet — Studio",
+    image: featured3,
     ratio: "5 / 4",
   },
+];
 ];
 
 const fadeUp = (delay = 0) => ({
@@ -60,7 +64,12 @@ function FeaturedCollection() {
 
         <div className="featured__grid">
           <motion.article className="featured__piece featured__piece--lead" {...fadeUp(0.12)}>
-            <ImagePlaceholder label={lead.image} ratio={lead.ratio} showLabel={false} />
+           <ImagePlaceholder
+  image={lead.image}
+  label={lead.name}
+  ratio={lead.ratio}
+  showLabel={false}
+/>
             <div className="featured__piece-caption">
               <span className="catalogue-number">{lead.number}</span>
               <h3 className="featured__piece-name featured__piece-name--lead">{lead.name}</h3>
@@ -73,7 +82,12 @@ function FeaturedCollection() {
           <div className="featured__stack">
             {rest.map((piece, i) => (
               <motion.article className="featured__piece" key={piece.number} {...fadeUp(0.18 + i * 0.08)}>
-                <ImagePlaceholder label={piece.image} ratio={piece.ratio} showLabel={false} />
+                <ImagePlaceholder
+  image={piece.image}
+  label={piece.name}
+  ratio={piece.ratio}
+  showLabel={false}
+/>
                 <div className="featured__piece-caption">
                   <span className="catalogue-number">{piece.number}</span>
                   <h3 className="featured__piece-name">{piece.name}</h3>
