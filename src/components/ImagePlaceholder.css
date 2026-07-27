@@ -1,0 +1,34 @@
+/* Image placeholder — flat photo-stock fill. No pattern, no frame; the
+   surrounding whitespace does the framing. */
+
+.image-placeholder {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ede3d4;
+}
+
+.image-placeholder--warm {
+  background: #e6dac4;
+}
+
+.image-placeholder__label {
+  position: absolute;
+  left: var(--space-3);
+  bottom: var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-micro);
+  color: var(--color-text-secondary);
+  opacity: 0.65;
+}
+
+.image-placeholder__plate {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-micro);
+  letter-spacing: 0.04em;
+  color: var(--color-text-secondary);
+  opacity: 0.55;
+}

@@ -59,3 +59,4 @@ the same aspect ratio; the labels describe what each shot should show
 | Accent | `#8C7358` |
 | Headline typeface | Instrument Serif |
 | Body typeface | Geist |
+"# Stilla-1" 

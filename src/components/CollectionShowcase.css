@@ -1,0 +1,31 @@
+.showcase__eyebrow {
+  margin-bottom: var(--space-6);
+}
+
+.showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.showcase__piece {
+  margin: 0;
+}
+
+.showcase__piece-name {
+  font-family: var(--font-sans);
+  font-size: var(--text-micro);
+  color: var(--color-text-secondary);
+  padding-top: var(--space-2);
+}
+
+@media (min-width: 720px) {
+  .showcase__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+  }
+
+  .showcase__piece--offset {
+    margin-top: var(--space-6);
+  }
+}
