@@ -36,8 +36,9 @@ function Craftsmanship() {
     height: "100%",
     objectFit: "cover",
     display: "block",
-  }}
-/>
+   }}
+  />
+</motion.div>
 
         <div className="craftsmanship__text">
           <motion.span
