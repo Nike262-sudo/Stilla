@@ -1,3 +1,4 @@
+import editorial from "../assets/images/editorial.jpg";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "./ImagePlaceholder";
 import "./EditorialStory.css";
@@ -19,9 +20,16 @@ function EditorialStory() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.1, ease: EASE }}
-      >
-        <ImagePlaceholder label="Inside the Workshop — Jutland" ratio="21 / 9" plate="Plate 03" />
-      </motion.div>
+      <img
+  src={editorial}
+  alt="Editorial"
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    display: "block",
+  }}
+/>
 
       <div className="wrap editorial__quote-wrap">
         <motion.blockquote
