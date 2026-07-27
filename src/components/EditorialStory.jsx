@@ -14,22 +14,24 @@ const EASE = [0.22, 1, 0.36, 1];
 function EditorialStory() {
   return (
     <section className="editorial">
-      <motion.div
-        className="editorial__image"
-        initial={{ opacity: 0, scale: 1.04 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 1.1, ease: EASE }}
-      <img
-  src={editorial}
-  alt="Editorial"
-  style={{
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    display: "block",
-  }}
-/>
+     <motion.div
+  className="editorial__image"
+  initial={{ opacity: 0, scale: 1.04 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true, margin: "-100px" }}
+  transition={{ duration: 1.1, ease: EASE }}
+>
+  <img
+    src={editorial}
+    alt="Editorial"
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      display: "block",
+    }}
+  />
+</motion.div>
 
       <div className="wrap editorial__quote-wrap">
         <motion.blockquote
