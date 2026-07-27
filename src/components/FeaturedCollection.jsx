@@ -1,6 +1,6 @@
-import featured1 from "../assets/images/Featured.jpg";
-import featured2 from "../assets/images/Featured-2.jpg";
-import featured3 from "../assets/images/Featured-3.jpg";
+import featured1 from "../assets/images/featured.jpg";
+import featured2 from "../assets/images/featured-2.jpg";
+import featured3 from "../assets/images/eatured-3.jpg";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "./ImagePlaceholder";
 import "./FeaturedCollection.css";
@@ -13,24 +13,24 @@ const PIECES = [
     name: "The Bevel Chair",
     material: "American white oak",
     detail: "Hand-caned seat. Waxed, never lacquered.",
-    image: Featured1,
+    image: featured1,
     ratio: "4 / 5",
   },
   {
     number: "N° 02",
     name: "Hearth Table",
     material: "Solid walnut",
-    image: Featured2,
+    image: featured2,
     ratio: "5 / 4",
   },
   {
     number: "N° 03",
     name: "Fold Cabinet",
     material: "Ash and blackened steel",
-    image: Featured3,
+    image: featured3,
     ratio: "5 / 4",
   },
-
+];
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 22 },
   whileInView: { opacity: 1, y: 0 },
