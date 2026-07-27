@@ -1,6 +1,6 @@
-import featured1 from "../assets/images/featured-1.jpg";
-import featured2 from "../assets/images/featured-2.jpg";
-import featured3 from "../assets/images/featured-3.jpg";
+import featured1 from "../assets/images/Featured.jpg";
+import featured2 from "../assets/images/Featured-2.jpg";
+import featured3 from "../assets/images/Featured-3.jpg";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "./ImagePlaceholder";
 import "./FeaturedCollection.css";
