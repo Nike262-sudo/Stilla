@@ -60,11 +60,16 @@ function CollectionShowcase() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8, ease: EASE, delay: (i % 2) * 0.1 }}
             >
-              <ImagePlaceholder
-  image={piece.image}
-  label={piece.name}
-  ratio={piece.ratio}
-  showLabel={false}
+             <img
+  src={piece.image}
+  alt={piece.name}
+  style={{
+    width: "100%",
+    aspectRatio: piece.ratio,
+    objectFit: "cover",
+    display: "block",
+  }}
+/>
 />
               <figcaption className="showcase__piece-name">{piece.name}</figcaption>
             </motion.figure>
