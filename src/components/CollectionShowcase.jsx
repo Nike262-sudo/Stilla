@@ -1,4 +1,4 @@
-import collection1 from "../assets/images/collection-1.jpg";
+import collection1 from "../assets/images/collection.jpg";
 import collection2 from "../assets/images/collection-2.jpg";
 import collection3 from "../assets/images/collection-3.jpg";
 import collection4 from "../assets/images/collection-4.jpg";
