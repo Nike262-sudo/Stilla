@@ -1,5 +1,5 @@
 .hero {
-  padding-top: clamp(10.5rem, 19vw, 15rem);
+  padding-top: clamp(5rem, 8vw, 7rem);
   padding-bottom: var(--space-6);
 }
 
