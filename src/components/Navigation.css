@@ -115,13 +115,6 @@
   color: var(--color-text-secondary);
   margin-top: 1rem;
 }
-
-@media (max-width: 859px) {
-  .nav__cta {
-    display: none;
-  }
-}
-
 @media (min-width: 860px) {
   .nav__links {
     display: flex;
@@ -137,5 +130,11 @@
 
   .nav-overlay {
     display: none;
+  }
+}
+
+@media (max-width: 859px) {
+  .btn.nav__cta {
+    display: none !important;
   }
 }
