@@ -72,15 +72,15 @@ function Materials() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.7, ease: EASE, delay: (i % 3) * 0.08 }}
             >
-             <ImagePlaceholder
-  image={name.image}
-  label={name.name}
+            <ImagePlaceholder
+  image={material.image}
+  label={material.name}
   ratio="1 / 1"
   showLabel={false}
 />
 
 <span className="materials__item-name">
-  {name.name}
+  {material.name}
 </span>
             </motion.div>
           ))}
