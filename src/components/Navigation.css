@@ -116,6 +116,12 @@
   margin-top: 1rem;
 }
 
+@media (max-width: 859px) {
+  .nav__cta {
+    display: none;
+  }
+}
+
 @media (min-width: 860px) {
   .nav__links {
     display: flex;
