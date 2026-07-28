@@ -1,10 +1,21 @@
+import material1 from "../assets/images/material-1.jpg";
+import material2 from "../assets/images/material-2.jpg";
+import material3 from "../assets/images/material-3.jpg";
+import material4 from "../assets/images/material-4.jpg";
+import material5 from "../assets/images/material-5.jpg";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "./ImagePlaceholder";
 import "./Materials.css";
 
 const EASE = [0.22, 1, 0.36, 1];
 
-const MATERIALS = ["Oak", "Walnut", "Wool", "Brass", "Bluestone"];
+const MATERIALS = [
+  { name: "Oak", image: material1 },
+  { name: "Walnut", image: material2 },
+  { name: "Wool", image: material3 },
+  { name: "Brass", image: material4 },
+  { name: "Bluestone", image: material5 },
+];
 
 /**
  * Materials
@@ -52,17 +63,25 @@ function Materials() {
         </div>
 
         <div className="materials__grid">
-          {MATERIALS.map((name, i) => (
+         {MATERIALS.map((material, i) => (
             <motion.div
               className="materials__item"
-              key={name}
+              key={material.name}
               initial={{ opacity: 0, y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.7, ease: EASE, delay: (i % 3) * 0.08 }}
             >
-              <ImagePlaceholder label={`${name} — Texture Close-up`} ratio="1 / 1" showLabel={false} />
-              <span className="materials__item-name">{name}</span>
+             <ImagePlaceholder
+  image={name.image}
+  label={name.name}
+  ratio="1 / 1"
+  showLabel={false}
+/>
+
+<span className="materials__item-name">
+  {name.name}
+</span>
             </motion.div>
           ))}
         </div>
