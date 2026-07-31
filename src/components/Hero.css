@@ -23,8 +23,8 @@
 
 .hero__cta {
   padding: 1.05rem 2rem;
+  margin-bottom: 5rem;
 }
-
 .hero__image {
   width: 100%;
   aspect-ratio: 16 / 9;
